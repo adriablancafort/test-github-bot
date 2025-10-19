@@ -13,3 +13,7 @@ const config = {
   aws_access_key_id: "AKIAIOSFODNN7EXAMPLE",
   aws_secret_access_key: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 };
+
+// VIOLATION 4: Console statements (LOW severity)
+console.log("Debug info:", apiKey);
+console.error("Error occurred");
