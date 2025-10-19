@@ -7,3 +7,9 @@ const apiKey = "live_1234567890abcdefghijklmnop";
 
 // VIOLATION 2: Hardcoded password (HIGH severity)
 const dbPassword = "MyS3cr3tP@ssw0rd!";
+
+// VIOLATION 3: AWS credentials (HIGH severity)
+const config = {
+  aws_access_key_id: "AKIAIOSFODNN7EXAMPLE",
+  aws_secret_access_key: "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+};
