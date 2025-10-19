@@ -17,3 +17,26 @@ const config = {
 // VIOLATION 4: Console statements (LOW severity)
 console.log("Debug info:", apiKey);
 console.error("Error occurred");
+
+// VIOLATION 5: TODO comment (LOW severity)
+// TODO: Fix this later
+
+// VIOLATION 6: Disabled linting (MEDIUM severity)
+// eslint-disable-next-line no-unused-vars
+const unusedVariable = "test";
+
+// VIOLATION 7: TypeScript ignore (MEDIUM severity)
+// @ts-ignore
+const problematicCode = somethingUndefined;
+
+// VIOLATION 8: Unsafe eval (HIGH severity)
+function executeCode(code) {
+  return eval(code);
+}
+
+// This file should trigger a compliance report with:
+// - 4 high severity violations
+// - 2 medium severity violations
+// - 2 low severity violations
+
+module.exports = { apiKey, dbPassword, config };
