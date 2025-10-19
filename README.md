@@ -4,3 +4,6 @@
 
 // VIOLATION 1: Hardcoded API key (HIGH severity)
 const apiKey = "live_1234567890abcdefghijklmnop";
+
+// VIOLATION 2: Hardcoded password (HIGH severity)
+const dbPassword = "MyS3cr3tP@ssw0rd!";
